@@ -572,6 +572,11 @@ h3 {
     }
 }
 
+.webring-footer {
+    text-align: center;
+    padding: 2rem 1.5rem 3rem;
+}
+
 /* Smooth transitions */
 a {
     transition: all 0.3s ease;
