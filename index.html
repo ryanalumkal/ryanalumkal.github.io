@@ -8,263 +8,256 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/simpleicons.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#socials"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
-                <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
-                <li><a href="Ryan_Neil_Alumkal_Resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Resume</a>
-                </li>
-            </ul>
-        </nav>
-        <h1>Ryan Neil Alumkal</h1>
-        <p>Electrical and Computer Engineering | Computer Hardware, Machine Learning, and Software</p>
-    </header>
-
-    <main>
-
-        <section id="socials">
-            <h2><i class="fas fa-user-circle"></i> About Me</h2>
-            <div class="about-card">
-                <p>Hi! I'm Ryan Neil Alumkal, a third year student at the University of Toronto studying Electrical and
-                    Computer Engineering. I have a passion for computer hardware and software, as well as machine
-                    learning. I'm actively involved in research teams, working on ML projects at UTMIST, IC design at
-                    IEEE, and have upcoming internship experience at AMD.</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/ryanalumkal/" target="_blank" class="social-link"><i
-                            class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/ryanalumkal" target="_blank" class="social-link"><i
-                            class="fab fa-github"></i> GitHub</a>
-                    <a href="Ryan_Neil_Alumkal_Resume.pdf" target="_blank" class="social-link"><i
-                            class="fas fa-file-pdf"></i> Resume</a>
-                </div>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <img src="images/48408ec9dc6a94be13cde28c1e6a396b.jpg" alt="Banner" class="avatar">
             </div>
-        </section>
+            <h1>Ryan Neil Alumkal</h1>
+            <p class="tagline">Electrical Engineering</p>
+            <nav>
+                <a href="https://www.linkedin.com/in/ryanalumkal/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ryanalumkal" target="_blank">GitHub</a>
+                <a href="Ryan_Neil_Alumkal_Resume.pdf" target="_blank">Resume</a>
+            </nav>
+        </header>
 
-        <section id="education">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <div class="education-card">
-                <div class="education-logo">
-                    <img src="images/University_of_Toronto_logo.png" alt="University of Toronto Logo">
-                </div>
-                <div class="education-details">
-                    <h3>University of Toronto</h3>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Toronto, ON, Canada</p>
-                    <p class="degree"><i class="fas fa-scroll"></i> Bachelor of Applied Science in Electrical
-                        Engineering</p>
-                    <p class="dates"><i class="fas fa-calendar-alt"></i> Sept. 2023 - May 2028</p>
-                </div>
-            </div>
-        </section>
+        <main>
+            <section>
+                <h2>About</h2>
+                <p>Hi, I'm Ryan. I'm currently a third-year student at the University of Toronto studying Electrical Engineering. Currently I am on my co-op term at AMD working in the memory diagnostic team.I'm mainly interested in computer architecture, ASIC design, and machine learning.</p>
+                <br>
+                <p>Outside of school, I enjoy listening to music, watching anime and movies, and reading manga and light novels.</p>
+            </section>
 
-        <section id="experience">
-            <h2><i class="fas fa-briefcase"></i> Experience</h2>
-            <div class="experience-list">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-logo">
-                            <img src="images/amd_logo.jpeg" alt="AMD Logo"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                            <i class="fas fa-microchip" style="display:none; color: #3b82f6; font-size: 2em;"></i>
-                        </div>
-                        <div class="experience-content">
-                            <h3><i class="fas fa-laptop-code"></i> Incoming Internship</h3>
-                            <p class="company">AMD</p>
-                            <p class="dates"><i class="fas fa-calendar"></i> Summer 2026</p>
-                            <p class="description">Memory Diagnostic</p>
-                        </div>
+            <section>
+                <h2>Shelf</h2>
+                <h3>Watching</h3>
+                <div class="shelf" id="shelf-anime"></div>
+                <h3>Reading</h3>
+                <div class="shelf" id="shelf-manga"></div>
+                <h3>Listening</h3>
+                <div class="recent-tracks" id="recent-tracks"></div>
+                <p class="shelf-credit">Powered by <a href="https://anilist.co/user/Sleepi3r" target="_blank">AniList</a> &amp; <a href="https://www.last.fm/user/sleepi3r" target="_blank">Last.fm</a></p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <div class="entry">
+                    <div class="entry-header">
+                        <strong>University of Toronto</strong>
+                        <span class="date">Sept 2023 &ndash; May 2028</span>
                     </div>
+                    <p>BASc Electrical Engineering</p>
                 </div>
+            </section>
 
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-logo">
-                            <img src="images/utmist_logo.jpeg" alt="UTMIST Logo"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                            <i class="fas fa-university" style="display:none; color: #3b82f6; font-size: 2em;"></i>
-                        </div>
-                        <div class="experience-content">
-                            <h3><i class="fas fa-brain"></i> Machine Learning Developer</h3>
-                            <p class="company">University of Toronto Machine Intelligence Student Team (UTMIST)</p>
-                            <p class="dates"><i class="fas fa-calendar"></i> Jan 2026 - Present (2 mos) | <i
-                                    class="fas fa-map-marker-alt"></i> Toronto, Ontario, Canada</p>
-                            <p class="description">Bigger Bird: Content-Aware Sparse Transformer Attention</p>
-                        </div>
+            <section>
+                <h2>Experience</h2>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <strong>AMD</strong>
+                        <span class="date">Summer 2026</span>
                     </div>
+                    <p>Silicon Validation (Memory Diagnostics) Intern</p>
                 </div>
 
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-logo">
-                            <img src="images/ieeeuoft_logo.jpeg" alt="IEEE University of Toronto Logo"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                            <i class="fas fa-microchip" style="display:none; color: #3b82f6; font-size: 2em;"></i>
-                        </div>
-                        <div class="experience-content">
-                            <h3><i class="fas fa-microchip"></i> ASIC Team Associate</h3>
-                            <p class="company">IEEE University of Toronto Student Branch</p>
-                            <p class="dates"><i class="fas fa-calendar"></i> Oct 2025 - Present (5 mos) | <i
-                                    class="fas fa-map-marker-alt"></i> Toronto, Ontario, Canada</p>
-                            <p class="description">IC design</p>
-                        </div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <strong>UTMIST</strong>
+                        <span class="date">Jan 2026 &ndash; Present</span>
                     </div>
+                    <p>Machine Learning Developer &mdash; Bigger Bird: Content-Aware Sparse Transformer Attention</p>
                 </div>
 
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-logo">
-                            <img src="images/utmist_logo.jpeg" alt="UTMIST Logo"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                            <i class="fas fa-university" style="display:none; color: #3b82f6; font-size: 2em;"></i>
-                        </div>
-                        <div class="experience-content">
-                            <h3><i class="fas fa-brain"></i> Machine Learning Developer</h3>
-                            <p class="company">University of Toronto Machine Intelligence Student Team (UTMIST)</p>
-                            <p class="dates"><i class="fas fa-calendar"></i> Jul 2025 - Jan 2026 (7 mos) | <i
-                                    class="fas fa-map-marker-alt"></i> Toronto, Ontario, Canada</p>
-                            <p class="description">Early-Stage Breast Cancer Detection Using Interpretable ML Models</p>
-                            <ul>
-                                <li><i class="fab fa-python"></i> Python (Programming Language)</li>
-                                <li><i class="fas fa-robot"></i> Machine Learning</li>
-                            </ul>
-                        </div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <strong>IEEE UofT</strong>
+                        <span class="date">Oct 2025 &ndash; Present</span>
                     </div>
+                    <p>ASIC Team Associate &mdash</p>
                 </div>
 
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-logo">
-                            <img src="images/utat_logo.jpeg" alt="UTAT Logo"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                            <i class="fas fa-rocket" style="display:none; color: #3b82f6; font-size: 2em;"></i>
-                        </div>
-                        <div class="experience-content">
-                            <h3><i class="fas fa-server"></i> Hardware Team Member</h3>
-                            <p class="company">University of Toronto Aerospace Team</p>
-                            <p class="dates"><i class="fas fa-calendar"></i> Jan 2025 - Oct 2025 (10 mos) | <i
-                                    class="fas fa-map-marker-alt"></i> Toronto, Ontario, Canada</p>
-                            <p class="description">PCB design</p>
-                            <ul>
-                                <li><i class="fas fa-tools"></i> Altium Designer</li>
-                                <li><i class="fas fa-project-diagram"></i> Printed Circuit Board (PCB) Design</li>
-                            </ul>
-                        </div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <strong>UTMIST</strong>
+                        <span class="date">Jul 2025 &ndash; Jan 2026</span>
                     </div>
+                    <p>Machine Learning Developer &mdash; Early-Stage Breast Cancer Detection Using Interpretable ML Models</p>
                 </div>
 
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-logo">
-                            <img src="images/cappitsolutions_logo.jpeg" alt="Cappit Solutions Logo"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                            <i class="fas fa-building" style="display:none; color: #3b82f6; font-size: 2em;"></i>
-                        </div>
-                        <div class="experience-content">
-                            <h3><i class="fas fa-code"></i> Software Developer Intern</h3>
-                            <p class="company">Cappit Solutions</p>
-                            <p class="dates"><i class="fas fa-calendar"></i> Jul 2023 - Sep 2023 (3 mos) | <i
-                                    class="fas fa-map-marker-alt"></i> Toronto, Ontario, Canada (On-site)</p>
-                            <ul>
-                                <li><i class="fab fa-python"></i> Python (Programming Language)</li>
-                            </ul>
-                        </div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <strong>UofT Aerospace Team</strong>
+                        <span class="date">Jan 2025 &ndash; Oct 2025</span>
                     </div>
+                    <p>Hardware Team Member &mdash</p>
                 </div>
 
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-logo">
-                            <img src="images/bluebirdit_logo.jpeg" alt="BlueBird IT Solutions Logo"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                            <i class="fas fa-building" style="display:none; color: #3b82f6; font-size: 2em;"></i>
-                        </div>
-                        <div class="experience-content">
-                            <h3><i class="fas fa-desktop"></i> Intern (Co-op)</h3>
-                            <p class="company">BlueBird IT Solutions Inc.</p>
-                            <p class="dates"><i class="fas fa-calendar"></i> Jul 2022 - Aug 2022 (2 mos) | <i
-                                    class="fas fa-map-marker-alt"></i> Toronto, Ontario, Canada</p>
-                            <ul>
-                                <li><i class="fas fa-microchip"></i> Computer Hardware</li>
-                                <li><i class="fas fa-cog"></i> Operating Systems</li>
-                            </ul>
-                        </div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <strong>Cappit Solutions</strong>
+                        <span class="date">Jul 2023 &ndash; Sep 2023</span>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2><i class="fas fa-code"></i> Projects</h2>
-            <div class="projects-grid">
-                <div class="project-category">
-                    <h3><i class="fas fa-microchip"></i> Computer Architecture</h3>
-                    <ul>
-                        <li><i class="fas fa-chart-line"></i> Pipeline Performance Analysis with SimpleScalar</li>
-                        <li><i class="fas fa-project-diagram"></i> Branch Predictor Design & Evaluation</li>
-                        <li><i class="fas fa-memory"></i> Data Cache Prefetcher Design with SimpleScalar</li>
-                        <li><i class="fas fa-cog"></i> Verilog Implementation of MIPS</li>
-                    </ul>
+                    <p>Software Developer Intern</p>
                 </div>
 
-                <div class="project-category">
-                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
-                    <ul>
-                        <li><a href="https://github.com/ryanalumkal/CycleGAN_animemorph" target="_blank"><i
-                                    class="fab fa-github"></i> Artistic Style Transfer with Modified Cycle-Consistent
-                                Adversarial Networks (CycleGANs)</a></li>
-                        <li><i class="fas fa-microphone"></i> Voice Command Recognition</li>
-                        <li><i class="fas fa-hands"></i> American Sign Language Recognition</li>
-                        <li><i class="fas fa-envelope"></i> SMS Spam Detection</li>
-                        <li><i class="fas fa-network-wired"></i> Data Imputation using an Autoencoder</li>
-                    </ul>
+                <div class="entry">
+                    <div class="entry-header">
+                        <strong>BlueBird IT Solutions</strong>
+                        <span class="date">Jul 2022 &ndash; Aug 2022</span>
+                    </div>
+                    <p>Intern</p>
                 </div>
+            </section>
 
-                <div class="project-category">
-                    <h3><i class="fas fa-server"></i> Hardware</h3>
-                    <ul>
-                        <li><a href="https://github.com/ryanalumkal/RX-Quadrature-Mixer" target="_blank"><i
-                                    class="fab fa-github"></i> RX Quadrature Mixer</a></li>
-                        <li><i class="fas fa-microchip"></i> STM32-Based On-Board Computer (OBC)</li>
-                        <li><i class="fas fa-heartbeat"></i> Spectral Imaging Heart Rate Monitor Cuff</li>
-                    </ul>
+            <section>
+                <h2>Projects</h2>
+
+                <h3>Computer Architecture</h3>
+                <ul>
+                    <li>Pipeline Performance Analysis with SimpleScalar</li>
+                    <li>Branch Predictor Design &amp; Evaluation</li>
+                    <li>Data Cache Prefetcher Design with SimpleScalar</li>
+                    <li>Verilog Implementation of MIPS</li>
+                </ul>
+
+                <h3>Machine Learning</h3>
+                <ul>
+                    <li><a href="https://github.com/ryanalumkal/CycleGAN_animemorph" target="_blank">Artistic Style Transfer with Modified CycleGANs</a></li>
+                    <li>Voice Command Recognition</li>
+                    <li>American Sign Language Recognition</li>
+                    <li>SMS Spam Detection</li>
+                    <li>Data Imputation using an Autoencoder</li>
+                </ul>
+
+                <h3>Hardware</h3>
+                <ul>
+                    <li><a href="https://github.com/ryanalumkal/RX-Quadrature-Mixer" target="_blank">RX Quadrature Mixer</a></li>
+                    <li>STM32-Based On-Board Computer (OBC)</li>
+                    <li>Spectral Imaging Heart Rate Monitor Cuff</li>
+                </ul>
+
+                <h3>Embedded</h3>
+                <ul>
+                    <li><a href="https://github.com/ryanalumkal/DE1-SoC-Voice-Controlled-Rover" target="_blank">Voice Controlled Rover</a></li>
+                </ul>
+
+                <h3>Software</h3>
+                <ul>
+                    <li><a href="https://github.com/trackitward" target="_blank">TrackIt</a></li>
+                    <li><a href="https://github.com/bytestock" target="_blank">BiteStock</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Blog</h2>
+
+                <div class="blog-entry">
+                    <div class="entry-header">
+                        <strong>Coming soon</strong>
+                        <span class="date">Apr 2026</span>
+                    </div>
+                    <p></p>
                 </div>
+            </section>
+        </main>
 
-                <div class="project-category">
-                    <h3><i class="fas fa-microchip"></i> Embedded</h3>
-                    <ul>
-                        <li><a href="https://github.com/ryanalumkal/DE1-SoC-Voice-Controlled-Rover" target="_blank"><i
-                                    class="fab fa-github"></i> Voice Controlled Rover</a></li>
-                    </ul>
-                </div>
+        <!-- Do not remove this -->
+        <footer class="webring-footer">
+            <div data-webring="ca" data-member="ryan-alumkal"></div>
+        </footer>
+        <script src="https://webring.ca/embed.js" defer></script>
+        <!-- Do not remove this -->
+    </div>
 
-                <div class="project-category">
-                    <h3><i class="fas fa-laptop-code"></i> Software</h3>
-                    <ul>
-                        <li><a href="https://github.com/trackitward" target="_blank"><i class="fab fa-github"></i>
-                                TrackIt</a></li>
-                        <li><a href="https://github.com/bytestock" target="_blank"><i class="fab fa-github"></i>
-                                BiteStock</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <script>
+        const ANILIST_USERNAME = 'Sleepi3r';
 
-    </main>
+        const query = `
+        query ($username: String) {
+            anime: MediaListCollection(userName: $username, type: ANIME, status: CURRENT, sort: UPDATED_TIME_DESC) {
+                lists { entries { media { id title { romaji } coverImage { large } siteUrl } } }
+            }
+            manga: MediaListCollection(userName: $username, type: MANGA, status: CURRENT, sort: UPDATED_TIME_DESC) {
+                lists { entries { media { id title { romaji } coverImage { large } siteUrl } } }
+            }
+        }`;
 
-    <footer class="webring-footer">
-        <div data-webring="ca" data-member="ryan-alumkal"></div>
-    </footer>
-    <script src="https://webring.ca/embed.js" defer></script>
+        async function loadShelf() {
+            try {
+                const res = await fetch('https://graphql.anilist.co', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query, variables: { username: ANILIST_USERNAME } })
+                });
+                const { data } = await res.json();
+
+                const animeEntries = data.anime.lists.flatMap(l => l.entries).slice(0, 8);
+                const mangaEntries = data.manga.lists.flatMap(l => l.entries).slice(0, 8);
+
+                renderShelf('shelf-anime', animeEntries);
+                renderShelf('shelf-manga', mangaEntries);
+            } catch (e) {
+                document.querySelectorAll('.shelf').forEach(el => {
+                    el.innerHTML = '<p style="color:#666;font-size:0.85rem;">Could not load list.</p>';
+                });
+            }
+        }
+
+        function renderShelf(id, entries) {
+            const container = document.getElementById(id);
+            if (!entries.length) {
+                container.innerHTML = '<p style="color:#666;font-size:0.85rem;">Nothing here right now.</p>';
+                return;
+            }
+            container.innerHTML = entries.map(e => `
+                <a href="${e.media.siteUrl}" target="_blank" class="shelf-item" title="${e.media.title.romaji}">
+                    <img src="${e.media.coverImage.large}" alt="${e.media.title.romaji}" loading="lazy">
+                </a>
+            `).join('');
+        }
+
+        loadShelf();
+
+        const LASTFM_USERNAME = 'sleepi3r';
+        const LASTFM_API_KEY = '381aa973d9f559e3b31b5566d4314e85';
+
+        async function loadRecentTracks() {
+            try {
+                const res = await fetch(
+                    `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${LASTFM_USERNAME}&api_key=${LASTFM_API_KEY}&format=json&limit=5`
+                );
+                const data = await res.json();
+                const tracks = data.recenttracks.track;
+
+                const container = document.getElementById('recent-tracks');
+                container.innerHTML = tracks.map(t => {
+                    const img = t.image.find(i => i.size === 'medium')?.['#text'] || '';
+                    const nowPlaying = t['@attr']?.nowplaying;
+                    return `
+                        <a href="${t.url}" target="_blank" class="track">
+                            ${img ? `<img src="${img}" alt="${t.album?.['#text'] || ''}" class="track-art">` : '<div class="track-art track-art-empty"></div>'}
+                            <div class="track-info">
+                                <span class="track-name">${t.name}</span>
+                                <span class="track-artist">${t.artist['#text']}${nowPlaying ? ' &middot; Now playing' : ''}</span>
+                            </div>
+                        </a>
+                    `;
+                }).join('');
+            } catch (e) {
+                document.getElementById('recent-tracks').innerHTML =
+                    '<p style="color:#666;font-size:0.85rem;">Could not load tracks.</p>';
+            }
+        }
+
+        loadRecentTracks();
+    </script>
 </body>
 
 </html>
